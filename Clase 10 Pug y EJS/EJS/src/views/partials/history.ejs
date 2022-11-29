@@ -1,0 +1,15 @@
+<% if (users.length > 0) { %>
+    <% users.forEach(user=> { %>
+        <p>
+            <%= user.name %>
+        </p>
+        <p>
+            <%= user.lastname %>
+        </p>
+        <p>
+            <%= user.age %>
+        </p>
+        <% }) %>
+<% } else { %>
+    <p>There is no data</p>
+<% } %> 
